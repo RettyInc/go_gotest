@@ -38,9 +38,29 @@ func TestFizzBuzz(t *testing.T) {
 			"Fizz",
 		},
 		{
+			"5の倍数の場合はBuzzを返す",
+			5,
+			"Buzz",
+		},
+		{
 			"3の倍数の場合はFizzを返す",
 			6,
 			"Fizz",
+		},
+		{
+			"5の倍数の場合はBuzzを返す",
+			10,
+			"Buzz",
+		},
+		{
+			"15の倍数の場合はFizzBuzzを返す",
+			15,
+			"FizzBuzz",
+		},
+		{
+			"15の倍数の場合はFizzBuzzを返す",
+			30,
+			"FizzBuzz",
 		},
 		{
 			"3の倍数の場合はFizzを返す",

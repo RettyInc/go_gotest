@@ -1,14 +1,22 @@
 package tddbc
 
-import "fmt"
+import (
+	"strconv"
+)
 
 func Say(greeting string) string {
 	return greeting + " TDD BootCamp!!"
 }
 
 func FizzBuzz(value int) string {
-	if value%3 == 0 {
+	switch {
+	case value%15 == 0:
+		return "FizzBuzz"
+	case value%5 == 0:
+		return "Buzz"
+	case value%3 == 0:
 		return "Fizz"
+	default:
+		return strconv.Itoa(value)
 	}
-	return fmt.Sprintf("%d", value)
 }
